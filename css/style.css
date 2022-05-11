@@ -32,6 +32,11 @@ body{
     gap: 2%;
 }
 
+#section1:hove{
+    transform: translatex(50px);
+    transition: 1s;
+}
+
 #section1{
     position: relative;
     z-index: 1;
@@ -40,7 +45,9 @@ body{
     height: 25%;
     border-radius: 10px 60px 10px 10px;
     top: 40%;
+    
 }
+
 
 #section2{
     position: relative;
@@ -73,26 +80,21 @@ body{
     right: 10%;
 }
 
+#section2 img{
+    width: 180px;
+    position: absolute;
+    bottom: 70%;
+    left: 40%;
+}
+
 #section3{
+    position: fixed;
     width: 100%;
     height: 50vh;
     background-image: url(../images/bgdesktop.png);
     background-size: cover;
-    position: fixed;
     bottom: 0;
     left: 0;
-}
-
-#section4{
-    display: flex;
-    width: 180px;
-    height: 92px;
-    position: absolute;
-    z-index: 1;
-    background-image: url(../images/globo.png);
-    background-size: cover;
-    top: 38%;
-    right: 25%;
 }
 
 #logo{
@@ -114,6 +116,13 @@ body{
     background-color: var(--VeryDarkBlue);
     padding: 10px;
     border-radius: 10px;
+}
+
+.images:hover{
+    background-color: var(--PaleBlue);
+    opacity: 0.8;
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 #progressbar{
@@ -184,6 +193,12 @@ body{
         width: 95%;
         top: 25%;
     }
+    #section2 img{
+        width: 36%;
+        position: absolute;
+        bottom: 70%;
+        left: 40%;
+    }
     #progressbar{
         width: 80%;
     }
@@ -200,6 +215,9 @@ body{
     }
     #section2{
         top: 25%;
+    }
+    #section2 img{
+        left: 62%;
     }
 } 
 
